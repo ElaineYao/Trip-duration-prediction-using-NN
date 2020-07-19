@@ -19,5 +19,11 @@ I've set the input to be the original test data, so just `python run.py` .
 - `python run.py`
 
 # Data Preprocessing
+  These following features are extracted as inputs of the neural network
+ - Distance features: 'distance_haversine', 'distance_dummy_manhattan'
+ - Speed features：'avg_speed_h'，'avg_speed_m', unit:m/s
+ - Time features: 'pick_up_h', 'pick_up_m', 'weekday', (0 represents Sunday)
+ - Zone features: 'pickup_lat_label', 'pickup_long_label', 'dropoff_lat_label', 'dropoff_long_label'
 
-
+# Neural Network
+A very simple Fully Connected Network with 3 Dense layers and 2 Dropout layers and SGD optimizer
