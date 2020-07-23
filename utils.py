@@ -14,7 +14,7 @@ from sklearn.compose import ColumnTransformer
 import warnings
 warnings.filterwarnings('ignore')
 
-datapath = './dataset/'
+datapath = './dataset/train.csv'
 
 # Make the trip_duration time discrete in minutes,
 # input: the dataframe of train or test.csv
